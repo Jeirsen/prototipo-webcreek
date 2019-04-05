@@ -1,0 +1,153 @@
+body {
+  background-color: #33005f;
+  margin: 0;
+}
+
+header {
+  background-color: #4a0089;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-area {
+  padding: 5px 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.signout {
+  height: 45px;
+  width: 20px;
+  padding-right: 10px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbarlogo {
+  height: 60px;
+  width: 16%;
+}
+
+.logo {
+  float: left;
+  width: 97px;
+  height: 28px;
+  padding: 15px 0px 0px 25px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav li.active {
+  border-bottom: 1px solid #f4bb00;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+}
+
+nav a.active {
+  color: #f4bb00;
+}
+
+.dashboard-icons {
+  height: 20px;
+  padding-right: 10px;
+}
+
+#sideMenu {
+  background: #240043;
+  max-width: 200px;
+  width: 200px;
+  top: 60px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#sideMenu nav {
+  padding: 20px;
+}
+
+#sideMenu nav a {
+  display: block;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  padding: 10px 10px 10px 25px;
+}
+
+#mainContent {
+  margin-left: 200px;
+}
+
+#mainContent h2 {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.column {
+  float: left;
+  width: 6%;
+  padding: 0px 0px 0px 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.item.active {
+  background-color: #f4bb00;
+}
+
+.item-images {
+  height: 30px;
+  width: 30px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

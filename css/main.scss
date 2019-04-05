@@ -1,0 +1,150 @@
+$colors: (
+  body: #33005f,
+  header: #4a0089,
+  fontColor: #ffffff,
+  activeColor: #f4bb00,
+  sideMenuColor: #240043
+);
+
+$header_height: 60px;
+
+body {
+  background-color: map-get($colors, body);
+  margin: 0;
+}
+
+header {
+  background-color: map-get($colors, header);
+  height: $header_height;
+  display: flex;
+}
+
+.user-area {
+  padding: 5px 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.signout {
+  height: 45px;
+  width: 20px;
+  padding-right: 10px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbarlogo {
+  height: 60px;
+  width: 16%;
+}
+
+.logo {
+  float: left;
+  width: 97px;
+  height: 28px;
+  padding: 15px 0px 0px 25px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px;
+  &.active {
+    border-bottom: 1px solid map-get($colors, activeColor);
+  }
+}
+
+nav a {
+  color: map-get($colors, fontColor);
+  text-decoration: none;
+  text-transform: initial;
+  font-size: 15px;
+  display: flex;
+  padding-left: 5px;
+  &.active {
+    color: map-get($colors, activeColor);
+  }
+}
+
+.dashboard-icons {
+  height: 20px;
+  padding-right: 10px;
+}
+
+#sideMenu {
+  background: map-get($colors, sideMenuColor);
+  max-width: 200px;
+  width: 200px;
+  top: 60px;
+  bottom: 0px;
+  position: absolute;
+  nav {
+    padding: 20px;
+    a {
+      display: block;
+      padding: 15px 5px;
+      color: map-get($colors, fontColor);
+      text-decoration: none;
+    }
+  }
+}
+
+.container {
+  padding: 10px 10px 10px 25px;
+}
+
+#mainContent {
+  margin-left: 200px;
+  h2 {
+    color: map-get($colors, fontColor);
+    font-weight: lighter;
+  }
+}
+
+.column {
+  float: left;
+  width: 6%;
+  padding: 0px 0px 0px 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item {
+  padding: 20px;
+  background-color: map-get($colors, fontColor);
+  border-radius: 7px;
+  text-align: center;
+  &.active {
+    background-color: map-get($colors, activeColor);
+  }
+}
+
+.item-images {
+  height: 30px;
+  width: 30px;
+}
+
+p {
+  color: map-get($colors, fontColor);
+  font-size: 12px;
+  text-align: center;
+}
